@@ -4,20 +4,23 @@ import { Link } from 'react-router-dom';
 function Header() {
     return(
         <div>
-            <style jsx global>{`
+            <style jsx>{`
                 div {
                     background-color: black;
                 }
-
-                a {
+                
+                .link {
                     color: white;
                     text-decoration: none;
                     font-size: 30px;
+                    margin-right: 4%;
                 }
             `}</style>
-            <Link className="link" to="/">Home</Link>
-            <Link to="/produce">Produce Calendar</Link>
-            <Link to="/markets">Upcoming Markets</Link>
+            <div className="headerLinks">
+                <Link to="/" style={{textDecoration: 'none'}}><span className="link">Home</span></Link>
+                <Link to="/produce" style={{textDecoration: 'none'}}><span className="link">Produce Calendar</span></Link>
+                <Link to="/markets" style={{textDecoration: 'none'}}><span className="link">Upcoming Markets</span></Link>
+            </div>
         </div>
     );
 }

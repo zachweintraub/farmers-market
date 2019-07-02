@@ -1,4 +1,5 @@
 import React from 'react';
+import marketSchedule from '../data';
 
 function MarketCal() {
     return(

@@ -1,4 +1,5 @@
 import React from 'react';
+import availableProduce from '../data';
 
 function ProduceCal() {
     return(
