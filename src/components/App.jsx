@@ -8,6 +8,11 @@ import Header from './Header';
 function App() {
     return (
         <div>
+        <style jsx global>{`
+            body {
+                background-color: #fcf090;
+            }
+        `}</style>
             <Header/>
             <Switch>
                 <Route exact path='/' component={Home} />
