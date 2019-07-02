@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 
@@ -56,6 +57,9 @@ module.exports = {
             appMountId: 'react-app-root',
             title: `Farmer's Market`,
             filename: resolve(__dirname, "build", "index.html")
-        })
+        }),
+        new CopyWebpackPlugin([
+            {from:'src/img',to:'img'}
+        ])
     ]
 };
