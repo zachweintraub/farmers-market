@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import { marketSchedule } from '../data';
+import { availableProduce } from '../data';
 import Market from './Market';
+import Produce from './Produce';
 
 class MarketCal extends Component {
     
@@ -21,10 +23,18 @@ class MarketCal extends Component {
         if(day == 5) return [{message: "We don't work on Fridays!"}];
         return marketSchedule.filter(market => market.id === day);
     }
+
+
+   getProduce(month) {
+    return  availableProduce.filter(produce => produce.id === month);
+   }
+
+
     
     render() {
         let selectedDate = this.state.date;
-        let thisMarket = this.getMarket(selectedDate.getDay())[0]; //{location: "Epicodus", hours: "All Day", booth: "E7"}
+        let thisMarket = this.getMarket(selectedDate.getDay())[0];
+        let thisProduce = this.getProduce(selectedDate.getMonth())[0];
 
 
         return(
@@ -36,6 +46,9 @@ class MarketCal extends Component {
                 />
                 <Market
                     market={thisMarket}
+                />
+                <Produce
+                    produce={thisProduce}
                 />
                 
             </div>
