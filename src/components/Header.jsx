@@ -18,7 +18,6 @@ function Header() {
             `}</style>
             <div className="headerLinks">
                 <Link to="/" style={{textDecoration: 'none'}}><span className="link">Home</span></Link>
-                <Link to="/produce" style={{textDecoration: 'none'}}><span className="link">Produce Calendar</span></Link>
                 <Link to="/markets" style={{textDecoration: 'none'}}><span className="link">Upcoming Markets</span></Link>
             </div>
         </div>

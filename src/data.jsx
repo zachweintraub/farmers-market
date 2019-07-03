@@ -1,35 +1,41 @@
 export const marketSchedule = [  
     {  
+       id: 0,
        day: "Sunday",
        location: "Lents International",
        hours: "9:00am - 2:00pm",
        booth: "4A"
     },
     {  
+       id: 1,
        day: "Monday",
        location: "Pioneer Courthouse Square",
        hours: "10:00am - 2:00pm",
        booth: "7C"
     },
     {  
+       id: 2,
        day: "Tuesday",
        location: "Hillsboro",
        hours: "5:00pm - 8:30pm",
        booth: "1F"
     },
     {  
+       id: 3,
        day: "Wednesday",
        location: "Shemanski Park",
        hours: "10:00am - 2:00pm",
        booth: "3E"
     },
     {  
+       id: 4,
        day: "Thursday",
        location: "Northwest Portland",
        hours: "2:00pm - 6:00pm",
        booth: "6D"
     },
     {  
+       id: 6,
        day: "Saturday",
        location: "Beaverton",
        hours: "10:00am - 1:30pm",
@@ -39,6 +45,7 @@ export const marketSchedule = [
 
    export const availableProduce = [  
     {  
+       id: 0,
        month: "January",
        selection: [  
           "Apples",
@@ -52,6 +59,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 1,
        month: "February",
        selection: [  
           "Apples",
@@ -64,6 +72,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 2,
        month: "March",
        selection: [  
           "Apples",
@@ -77,6 +86,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 3,
        month: "April",
        selection: [  
           "Apples",
@@ -92,6 +102,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 4,
        month: "May",
        selection: [  
           "Apples",
@@ -107,6 +118,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 5,
        month: "June",
        selection: [  
           "Apples",
@@ -129,6 +141,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 6,
        month: "July",
        selection: [  
           "Apples",
@@ -165,6 +178,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 7,
        month: "August",
        selection: [  
           "Apples",
@@ -205,6 +219,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 8,
        month: "September",
        selection: [  
           "Apples",
@@ -239,6 +254,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 9,
        month: "October",
        selection: [  
           "Apples",
@@ -272,6 +288,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 10,
        month: "November",
        selection: [  
           "Apples",
@@ -289,6 +306,7 @@ export const marketSchedule = [
        ]
     },
     {  
+       id: 11,
        month: "December",
        selection: [  
           "Apples",
@@ -305,4 +323,3 @@ export const marketSchedule = [
        ]
     }
  ];
-   
